@@ -19,6 +19,11 @@ const layoutEngine = constructLayoutEngine({ routes, applications });
 //   () => System.import("@fmv/react-micro-app") as any,
 //   (location) => true
 // );
+// registerApplication(
+//   "@fmv/angular-app",
+//   () => System.import("@fmv/angular-micro-app") as any,
+//   (location) => true
+// );
 applications.forEach(registerApplication);
 layoutEngine.activate();
 start();
