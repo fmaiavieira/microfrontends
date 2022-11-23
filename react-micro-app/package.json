@@ -1,7 +1,9 @@
 {
   "name": "@fmv/react-micro-app",
+  "version": "1.0.0",
   "scripts": {
     "start": "webpack serve",
+    "start:microapp": "npm start -- --port 8500",
     "start:standalone": "webpack serve --env standalone",
     "build": "concurrently npm:build:*",
     "build:webpack": "webpack --mode=production",
@@ -58,7 +60,8 @@
     "@types/webpack-env": "^1.16.2",
     "single-spa": "^5.9.3",
     "@types/react": "^17.0.19",
-    "@types/react-dom": "^17.0.9"
+    "@types/react-dom": "^17.0.9",
+    "cross-env": "5.0.5"
   },
   "types": "dist/fmv-react-micro-app.d.ts"
 }

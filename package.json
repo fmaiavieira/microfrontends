@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "*"
+  ],
+  "scripts": {
+    "start": "concurrently -n \"shell,react,angular\" -c \"bgGreen.bold,bgMagenta.bold\" \"yarn:start:shell\" \"yarn:start:react\" \"yarn:start:angular\" --kill-others",
+    "start:shell": "yarn workspace @fmv/root-config start",
+    "start:react": "yarn workspace @fmv/react-micro-app start:microapp",
+    "start:angular": "yarn workspace angular-micro-app start:microapp"
+  },
+  "devDependencies": {
+    "concurrently": "^7.2.2"
+  }
+}

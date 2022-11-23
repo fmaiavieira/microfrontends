@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:microapp": "npm run serve:single-spa:angular-micro-app",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -25,7 +26,8 @@
     "single-spa-angular": "^5.0.2",
     "systemjs-webpack-interop": "^2.3.7",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "cross-env": "5.0.5"
   },
   "devDependencies": {
     "@angular-builders/custom-webpack": "12.1.3",
